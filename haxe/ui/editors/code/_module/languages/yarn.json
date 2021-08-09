@@ -1,0 +1,80 @@
+[
+    {
+        "id": "keywords",
+        "rules": [
+            "if", "else", "elseif", "endif",
+            "true", "false"
+        ]
+    },
+    {
+        "id": "operators",
+        "rules": [
+            "=", ">", "<", "!", "~", "?", ":", "==", "<=", ">=", "!=",
+            "&&", "||", "+", "-", "*", "->"
+        ]
+    },
+    {
+        "id": "identifiers",
+        "rules": [
+            "\\$[^\\s]+"
+        ]
+    },
+    {
+        "id": "brackets",
+        "rules": [
+            ["<<",">>","delimiter.angle"]
+        ]
+    },
+    {
+        "id": "annotations",
+        "rules": [
+            "@\\s*[a-zA-Z_\\$][\\w\\$]*",
+            "@:\\s*[a-zA-Z_\\$][\\w\\$]*"
+        ]
+    },
+    {
+        "id": "numbers.float",
+        "rules": [
+            "\\d*\\.\\d+([eE][\\-+]?\\d+)?"
+        ]
+    },
+    {
+        "id": "numbers.hex",
+        "rules": [
+            "#[^\\s]+"
+        ]
+    },
+    {
+        "id": "numbers",
+        "restrictToWords": true,
+        "rules": [
+            "[0-9]+"
+        ]
+    },
+    {
+        "id": "strings",
+        "rules": [
+            "\"",
+            "'"
+        ]
+    },
+    {
+        "id": "comment.start",
+        "rules": [
+            "\\/\\*"
+        ]
+    },
+    {
+        "id": "comment.end",
+        "rules": [
+            "\\*/"
+        ]
+    },
+    {
+        "id": "comment",
+        "rules": [
+            "\\/\\/.*$"
+        ]
+    }
+    
+]

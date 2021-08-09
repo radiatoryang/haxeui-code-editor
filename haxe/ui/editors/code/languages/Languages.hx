@@ -22,6 +22,7 @@ class Languages {
     private function registerDefaults() {
         registerLanguageFromResource("haxe", "haxeui-code-editor/languages/haxe.json");
         registerLanguageFromResource("hxml", "haxeui-code-editor/languages/hxml.json");
+		registerLanguageFromResource("yarn", "haxeui-code-editor/languages/yarn.json");
     }
     
     public function registerLanguage(languageId:String, language:Language) {
